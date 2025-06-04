@@ -3,9 +3,14 @@
     height: auto;
 }
 
-/*.header{
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px;
+header{
+    background-image: url('../img/header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-}*/
+    min-height: 349px;
+}
