@@ -14,3 +14,19 @@ header{
     text-align: center;
     min-height: 349px;
 }
+
+.profile-img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.75);
+}
+
+.neon-effect {
+    color: #fff;
+    text-shadow: 
+        0 0 5px #ff0000, 
+        0 0 20px #ff0000, 
+        0 0 40px #ff0000;
+}
