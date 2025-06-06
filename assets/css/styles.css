@@ -85,3 +85,16 @@ header{
   background-color: #ff0000;
   border-radius: 50%;
 }
+
+.project-image {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  width: 686px;
+}
+
+.company-image {
+  width: 300px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 1);
+  background-color: floralwhite;
+}
