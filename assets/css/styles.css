@@ -98,3 +98,7 @@ header{
   box-shadow: 0 0 10px rgba(255, 0, 0, 1);
   background-color: floralwhite;
 }
+
+.education-image {
+  width: 250px;
+}
