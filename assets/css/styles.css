@@ -35,6 +35,26 @@ body::before {
     height: auto;
 }
 
+.nav-link {
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
 header{
     background-image: url('../img/header.png');
     background-repeat: no-repeat;
@@ -47,12 +67,58 @@ header{
     min-height: 349px;
 }
 
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes headerPulse {
+  0%, 100% {
+    text-shadow:
+      0 0 0px #ff0000,
+      0 0 0px #ff0000,
+      0 0 0px #ff0000;
+  }
+  50% {
+    text-shadow:
+      0 0 5px #ff0000,
+      0 0 10px #ff0000,
+      0 0 20px #ff0000;
+  }
+}
+
+.header-text {
+  animation: fadeUp 2s ease forwards, headerPulse 2s ease-in-out infinite;
+  animation-delay: 0.3s, 1.5s; /* fadeIn primero, luego loop */
+}
+
+@keyframes profileFloatGlow {
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    transform: translateY(0);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+}
+
 .profile-img {
+    animation: profileFloatGlow 6s ease-in-out infinite;
     width: 300px;
     height: auto;
     border-radius: 50%;
     border: 2px solid #fff;
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.75);
 }
 
 .neon-effect {
@@ -90,6 +156,12 @@ header{
   border-radius: 50%;
   border: 2px solid #fff;
   width: 686px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 15px #000000 !important;
 }
 
 .company-image {
@@ -101,4 +173,15 @@ header{
 
 .education-image {
   width: 250px;
+}
+
+.btn-danger {
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+}
+
+.btn-danger:hover {
+  background-color: #ff1a1a;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
+  transform: translateY(-2px);
 }
