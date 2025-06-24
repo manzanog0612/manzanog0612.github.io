@@ -121,6 +121,43 @@ header{
     border: 2px solid #fff;
 }
 
+.secondary-background-color{
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+
+.neon-box {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  box-shadow: 
+    0 0 5px #ff0000,
+    0 0 10px #ff0000,
+    0 0 20px #ff0000;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.neon-box ul {
+  padding-left: 1.2rem;
+}
+
+.neon-box li {
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.neon-box li:hover {
+  color: #ff4d4d;
+  text-shadow:
+    0 0 3px #ff4d4d,
+    0 0 6px #ff4d4d;
+  transition: all 0.3s ease;
+  transform: translateX(5px);
+}
+
 .neon-effect {
     box-shadow: 
         0 0 5px #ff0000, 
@@ -133,6 +170,10 @@ header{
         0 0 5px #ff0000, 
         0 0 20px #ff0000, 
         0 0 40px #ff0000;
+}
+
+.txt-lighter{
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .timeline-item {
