@@ -55,6 +55,10 @@ body::before {
   width: 100%;
 }
 
+.html-btn{
+  margin-left: 1rem;
+}
+
 header{
     background-image: url('../img/header.png');
     background-repeat: no-repeat;
@@ -205,6 +209,10 @@ header{
   box-shadow: 0 4px 15px #000000 !important;
 }
 
+.proj-desc-text{
+    padding-top: 0rem;
+  }
+
 .company-image {
   width: 300px;
   border: 2px solid #fff;
@@ -225,4 +233,32 @@ header{
   background-color: #ff1a1a;
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
   transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .html-btn{
+    margin-left: 0rem;
+  }
+  
+  .header {
+    min-height: 250px;
+  }
+
+  .profile-img {
+    width: 200px;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .company-image, .education-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .proj-desc-text{
+    padding-top: 1rem;
+  }
 }
