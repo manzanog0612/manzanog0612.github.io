@@ -6,6 +6,7 @@
   <title>HTML Projects – Guillermina Manzano</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/html-projects-styles.css">
 </head>
 <body>
@@ -17,10 +18,10 @@
         <p class="lead">A selection of web-based projects created using HTML, CSS and Bootstrap</p>
     </header>
 
-    <main class="container-md py-5">
+    <main class="container-md pt-5 pb-0">
 
     	<!-- Summary -->
-    	<section class="summary mb-5">
+    	<section class="summary mb-5" data-aos="fade-in" data-aos-duration="750">
     		<h2 class="fw-bold mb-3">Summary</h2>
     		<p>
     			Since May 2025, I have been learning HTML and CSS as part of my continuous development as a programmer. 
@@ -30,10 +31,21 @@
     		<p>
     			I’m proactive and eager to learn — always looking for opportunities to improve my skills and explore new technologies.
     		</p>
+            <div class="key-competencies mt-4">
+                <h3 class="fw-bold mb-2">Key Competencies</h3>
+                <ul class="competencies-list">
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>Flexbox</li>
+                    <li>CSS Animations</li>
+                    <li>Media Queries</li>
+                </ul>
+            </div>
     	</section>
 
     	<!-- Education -->
-    	<section class="education mb-5">
+    	<section class="education mb-5" data-aos="fade-in" data-aos-duration="750">
     		<h2 class="fw-bold mb-3">Education</h2>
     		<div class="p-3 rounded-3 border" style="background-color: var(--color-primary); border-color: var(--color-accent);">
     			<h5 class="fw-bold mb-1">Desafío Latam</h5>
@@ -43,14 +55,25 @@
     	</section>
 
     	<!-- Projects -->
-    	<section>
+    	<section data-aos="fade-in" data-aos-duration="750">
     		<h2 class="fw-bold mb-4">Projects</h2>
     		<div class="row g-4">
+                <!-- This Page -->
+    			<div class="project-card card-big-img">
+    				<div class="p-3">
+    					<h5 class="fw-bold">This Page!</h5>
+    					<p>This website showcases my ongoing practice and refinement of front-end development skills, including CSS Grid, Flexbox, media queries, and Bootstrap. It serves as a curated portfolio of web-based projects, each one reflecting different techniques I’ve learned and applied. The layout is responsive, the structure is fully custom, and it represents my commitment to continuous learning and improvement as a developer.</p>  					
+    				</div>
+                    <div class="project-imgs-container">
+                        <img src="assets/img/html-proj-10.webp" alt="Screenshot of this screen in a computer monitor" class="img-fluid project-img">
+                        <img src="assets/img/html-proj-10-mobile.webp" alt="Screenshot of this screen in a mobile" class="img-fluid project-img">
+                    </div>
+    			</div>
     			<!-- Videogame Store -->
     			<div class="project-card card-big-img">
     				<div class="p-3">
     					<h5 class="fw-bold">Videogame Store</h5>
-    					<p>Responsive mockup of a video game store website, built with HTML and CSS using media queries. The layout adapts to different screen sizes, showcasing various product sections and a clean navigation structure. Designed as part of a learning module, the page demonstrates practical use of responsive design principles.</p>
+    					<p>Responsive mockup of a video game store website, built with HTML and CSS as my first exercise using media queries. The layout adapts to different screen sizes, showcasing various product sections and a clean navigation structure. Designed as part of a learning module, this project marked my introduction to more technical design tactics.</p>
     					<a href="https://manzanog0612.github.io/Module-2-Media-Queries_Videogame-Store-Website-Mock/" target="_blank" class="btn btn-sm btn-view">View Project</a>
     				</div>
                     <div class="project-imgs-container">
@@ -149,10 +172,14 @@
     		</div>
     	</section>
     </main>
-
-
     <footer>
         © Guillermina Manzano 2025 – All rights reserved
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

@@ -99,7 +99,7 @@ header{
 
 .header-text {
   animation: fadeUp 2s ease forwards, headerPulse 2s ease-in-out infinite;
-  animation-delay: 0.3s, 1.5s; /* fadeIn primero, luego loop */
+  animation-delay: 0.3s, 1.5s;
 }
 
 @keyframes profileFloatGlow {

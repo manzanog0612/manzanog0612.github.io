@@ -28,11 +28,26 @@ nav{
   background-color: var(--color-hover);
 }
 
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .header {
   background-color: var(--color-bg-card);
   border-bottom: 2px solid var(--color-accent);
   padding: 2rem 1rem;
   text-align: center;
+}
+
+.header h1, .header p {
+  animation: fadeUp 2s ease forwards;
 }
 
 .summary,
@@ -47,6 +62,34 @@ nav{
 .education h2 {
 	color: var(--color-accent);
 }
+
+.key-competencies h3 {
+  color: var(--color-accent);
+  font-size: 1.3rem;
+  border-left: 4px solid var(--color-accent);
+  padding-left: 0.5rem;
+}
+
+.competencies-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-left: 0;
+  margin-top: 0.5rem;
+}
+
+.competencies-list li {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  padding: 0.3rem 1rem;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  user-select: none;
+}
+
 
 .project-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
