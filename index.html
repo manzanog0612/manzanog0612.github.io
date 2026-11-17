@@ -324,5 +324,18 @@
     <script>
       AOS.init();
     </script>
+    <script>
+      (function () {
+        function isPhoneView() {
+          return window.matchMedia('(max-width: 768px)').matches ||
+            /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+        function applyPhoneView() {
+          document.body.classList.toggle('phone-view', isPhoneView());
+        }
+        applyPhoneView();
+        window.addEventListener('resize', applyPhoneView);
+      })();
+    </script>
 </body>
 </html>

@@ -1,3 +1,8 @@
+body.phone-view::before {
+  animation: none;
+  animation-play-state: paused;
+}
+
 @keyframes neonPulse {
   0%, 100% {
     box-shadow:
@@ -236,6 +241,11 @@ header{
 }
 
 @media (max-width: 768px) {
+  body::before {
+    animation: none;
+    animation-play-state: paused;
+  }
+
   .html-btn{
     margin-left: 0rem;
   }
